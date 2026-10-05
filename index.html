@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DONGGUI — A small place on the Internet.</title>
+<meta name="description" content="DONGGUI — A small place on the Internet.">
+<style>
+:root{--bg:#f5f4f0;--fg:#171717;--muted:#777;--line:#d8d6cf}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","PingFang SC",Arial,sans-serif;line-height:1.7}
+.wrap{max-width:1050px;margin:auto;padding:0 28px}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.logo{font-weight:700;letter-spacing:.14em;font-size:14px}
+nav a{color:var(--muted);text-decoration:none;margin-left:24px;font-size:13px}
+nav a:hover{color:var(--fg)}
+.hero{min-height:72vh;display:flex;align-items:center;border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(58px,11vw,130px);line-height:.9;letter-spacing:-.07em;margin:0 0 28px;font-weight:700}
+.kicker{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.tagline{font-family:Georgia,serif;font-size:22px;margin:0 0 22px}
+.intro{max-width:560px;color:#555}
+section{padding:90px 0;border-bottom:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:180px 1fr;gap:50px}
+.label{font-size:12px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+h2{font-size:32px;margin:0 0 25px;letter-spacing:-.03em}
+p{margin:0 0 18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{border:1px solid var(--line);padding:22px;min-height:150px;text-decoration:none;color:inherit;display:block;transition:.2s}
+.card:hover{background:#fff;transform:translateY(-2px)}
+.card small{color:var(--muted);display:block;margin-bottom:18px}
+.card strong{font-size:19px}
+footer{padding:45px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between}
+@media(max-width:700px){nav a{display:none}.hero{min-height:65vh}.grid{grid-template-columns:1fr;gap:25px}section{padding:65px 0}.cards{grid-template-columns:1fr}.wrap{padding:0 20px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <div class="logo">DONGGUI</div>
+  <div>
+    <a href="#about">ABOUT</a><a href="#notes">NOTES</a><a href="#books">BOOKS</a><a href="#archive">ARCHIVE</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <div class="kicker">A small place on the Internet.</div>
+    <h1>DONGGUI</h1>
+    <p class="tagline">You must find yourself.</p>
+    <p class="intro">这里记录一些正在发生的事：读过的书、正在学习的语言、喜欢的音乐，以及偶尔冒出来的想法。</p>
+  </div>
+</header>
+
+<section id="about">
+  <div class="grid">
+    <div class="label">01 / About</div>
+    <div>
+      <h2>关于这里</h2>
+      <p>这是 Donggui 的个人空间。</p>
+      <p>没有明确的主题，也不急着定义自己。先记录，再慢慢成为。</p>
+    </div>
+  </div>
+</section>
+
+<section id="notes">
+  <div class="grid">
+    <div class="label">02 / Notes</div>
+    <div>
+      <h2>Notes</h2>
+      <div class="cards">
+        <a class="card" href="#"><small>NOTE · 001</small><strong>关于寻找自己</strong></a>
+        <a class="card" href="#"><small>NOTE · 002</small><strong>一些尚未完成的想法</strong></a>
+        <a class="card" href="#"><small>NOTE · 003</small><strong>记录正在发生的生活</strong></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="books">
+  <div class="grid">
+    <div class="label">03 / Books</div>
+    <div>
+      <h2>Reading</h2>
+      <p>正在读：德语。</p>
+      <p>也许从很简单的故事开始，慢慢读到黑塞。</p>
+    </div>
+  </div>
+</section>
+
+<section id="archive">
+  <div class="grid">
+    <div class="label">04 / Archive</div>
+    <div>
+      <h2>Archive</h2>
+      <p>这里以后会放照片、书单、音乐、旅行、随笔，以及任何值得留下的东西。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© DONGGUI</span>
+  <span>Made slowly.</span>
+</footer>
+</div>
+</body>
+</html>
